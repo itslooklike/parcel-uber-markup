@@ -1,0 +1,19 @@
+.button-primary {
+  min-width: 72px;
+  padding: 14px 8px 13px;
+  border: 0;
+  border-radius: 2px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.button-secondary {
+  min-width: 72px;
+  padding: 14px 8px 13px;
+  border: 1px solid var(--color-border-gray);
+  border-radius: 2px;
+  background-color: transparent;
+  color: var(--color-font-black);
+  font-weight: bold;
+}

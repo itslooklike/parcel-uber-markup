@@ -1,0 +1,22 @@
+html {
+  min-width: 320px;
+  font-family: Roboto;
+  font-size: 13px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+}

@@ -1,0 +1,29 @@
+.card {
+  padding: 8px;
+
+  &__figure {
+    margin: 0;
+  }
+
+  &__caption {
+    margin-top: 16px;
+    color: var(--color-font-black);
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__notice {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: var(--color-gray);
+    line-height: 21px;
+  }
+
+  &__deliver-time {
+    display: block;
+    margin-top: 4px;
+    color: var(--color-font-black);
+    font-size: 13px;
+    line-height: 21px;
+  }
+}
