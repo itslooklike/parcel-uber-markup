@@ -7,7 +7,10 @@
     "start": "parcel src/index.pug",
     "build": "parcel build src/index.pug --public-url ./",
     "st": "static dist",
-    "fc": "rm -rf node_modules && npm i && npm start",
+    "c": "rm -rf node_modules",
+    "c:i": "rm -rf node_modules && npm i",
+    "c:start": "rm -rf node_modules && npm i && npm start",
+    "lint": "stylelint ./src/**/*.scss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,6 +21,9 @@
     "node-static": "^0.7.10",
     "parcel-bundler": "^1.5.1",
     "parcel-plugin-pug": "^0.2.4",
+    "stylelint": "^8.4.0",
+    "stylelint-config-idiomatic-css": "^1.0.2",
+    "stylelint-config-standard": "^18.0.0",
     "typescript": "^2.6.2"
   }
 }

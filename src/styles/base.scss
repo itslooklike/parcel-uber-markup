@@ -1,9 +1,9 @@
 html {
+  box-sizing: border-box;
   min-width: 320px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 13px;
   background-color: #fff;
-  box-sizing: border-box;
 }
 
 *,
@@ -12,11 +12,9 @@ html {
   box-sizing: inherit;
 }
 
-img {
+img,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-body {
 }
