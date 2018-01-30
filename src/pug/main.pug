@@ -1,0 +1,21 @@
+include card.pug
+
+main.main-content
+  .search-wrap
+    label.input
+      input.input__input(type='text' placeholder='Search for restaurant or cuisine')
+  .delivery-wrap
+    .delivery-time-slot
+      .form-slot
+        span.form-slot__label When
+        .form-slot__btn-wrap
+          button.button-secondary ASAP
+    .delivery-address-slot
+      .form-slot
+        span.form-slot__label To
+        label.form-input
+          input.form-input__input(type='text' value='ul. Bolshaya Dmitrovka,22')
+  .card-grid
+    +card('Макдоналдс — Газетный', '₽₽ • Бургеры', '25 - 35 Min')
+      img.card__img(src='assets/shop-mcdonalds.jpg', alt='Макдоналдс — Газетный')
+
