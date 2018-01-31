@@ -22,8 +22,18 @@ main.page-stores
                 label.form-input-address__label
                   input.form-input-address__input(type='text' value='ul. Bolshaya Dmitrovka,22')
     .page-stores__title-wrap
-      .common__h1 Moscow Restaurants
-    .card-grid
-      +card('Макдоналдс — Газетный', '₽₽ • Бургеры', '25 - 35 Min')
-        img.card__img(src='assets/shop-mcdonalds.jpg', alt='Макдоналдс — Газетный')
+      h1.common__h1 Moscow Restaurants
+    .page-stores__grid
+      .page-stores__grid-card
+        +card('Макдоналдс — Газетный', '₽₽ • Бургеры', '25 - 35 Min')
+          img.card__img(src='assets/restaurants/restaurant-mcdonalds.png', alt='Макдоналдс — Газетный')
+      .page-stores__grid-card
+        +card('DimSum & Co — ЦДМ', '₽ • Японская • Китайская • Азиатская', '40 - 50 Min')
+          img.card__img(src='assets/restaurants/restaurant-dimsum.png', alt='DimSum & Co — ЦДМ')
+      .page-stores__grid-card
+        +card('ДвижОК — Манежная', '₽ • Американская • Европейская', '35 - 45 Min')
+          img.card__img(src='assets/restaurants/restaurant-dvizhok.png', alt='DimSum & Co — ЦДМ')
+      .page-stores__grid-card
+        +card('НЯ — NHA', '₽₽ • Вьетнамская', '30 - 40 Min')
+          img.card__img(src='assets/restaurants/restaurant-nya.png', alt='DimSum & Co — ЦДМ')
 
