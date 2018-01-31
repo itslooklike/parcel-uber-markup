@@ -1,0 +1,132 @@
+.footer {
+  background-color: var(--color-black);
+
+  &__inner {
+    padding: 56px 8px;
+  }
+
+  &__logo-wrap {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  &__logo-img {
+    width: 192px;
+    height: 20px;
+  }
+
+  &__hr-wrap {
+    &--logo {
+      margin-bottom: 32px;
+    }
+
+    &--menu {
+      margin-bottom: 24px;
+    }
+
+    &--badges {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__hash-wrap {
+    margin-bottom: 16px;
+  }
+
+  &__hash {
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__hash-hash {
+    color: var(--color-green);
+  }
+
+  &__social-wrap {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: -6px;
+    margin-bottom: 40px;
+    margin-left: -6px;
+  }
+
+  &__social {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    margin-left: 6px;
+
+    &--facebook {
+      background-image: url('assets/social-icons/social-icons-facebook.svg');
+    }
+
+    &--instagram {
+      background-image: url('assets/social-icons/social-icons-instagram.svg');
+    }
+
+    &--twitter {
+      background-image: url('assets/social-icons/social-icons-twitter.svg');
+    }
+  }
+
+  &__stores-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  &__stores-item-wrap {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  &__stores {
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--apple {
+      width: 109px;
+      background-image: url('assets/badges/badge-appstore.png');
+    }
+
+    &--android {
+      width: 124px;
+      background-image: url('assets/badges/badge-android.png');
+    }
+  }
+
+  &__menu-wrap {
+    margin-bottom: 40px;
+  }
+
+  &__menu-list {
+  }
+
+  &__menu-item {
+    margin-bottom: 24px;
+    color: var(--color-white);
+    font-size: 13px;
+    line-height: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__copyright-list {
+  }
+
+  &__copyright-item {
+    margin-bottom: 24px;
+    color: var(--color-white);
+    font-size: 11px;
+    line-height: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
