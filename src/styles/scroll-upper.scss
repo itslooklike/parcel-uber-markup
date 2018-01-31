@@ -1,0 +1,15 @@
+.scroll-upper {
+  position: fixed;
+  z-index: 10000;
+  right: 16px;
+  bottom: 24px;
+  display: none;
+  width: 64px;
+  height: 64px;
+  border: 0;
+  background: var(--color-green-light) url('assets/icon-arrow.svg') 50% 50%/16px 25px no-repeat;
+
+  &.active {
+    display: block;
+  }
+}

@@ -1,4 +1,8 @@
 import './index.scss';
-import message from "./ts/message";
+import scrollUpper from './ts/scrollUpper';
 
-console.log(message);
+const domIsLoaded = () => {
+  scrollUpper();
+};
+
+document.addEventListener('DOMContentLoaded', domIsLoaded);
