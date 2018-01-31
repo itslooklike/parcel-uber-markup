@@ -1,19 +1,26 @@
-.button-primary {
-  min-width: 72px;
-  padding: 14px 8px 13px;
+.button {
   border: 0;
-  color: var(--color-white);
-  font-weight: bold;
-  background-color: var(--color-black);
-  border-radius: 2px;
-}
-
-.button-secondary {
-  min-width: 72px;
-  padding: 14px 8px 13px;
-  border: 1px solid var(--color-border-gray);
-  color: var(--color-font-black);
-  font-weight: bold;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
   background-color: transparent;
   border-radius: 2px;
+
+  &--primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: var(--color-white);
+    background-color: var(--color-black);
+  }
+
+  &--secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: 1px solid var(--color-border-gray);
+    color: var(--color-font-black);
+  }
 }

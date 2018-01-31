@@ -6,15 +6,16 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 16px 4px 8px;
+    padding: 16px 8px 8px;
   }
 
   &__logo {
     width: 106px;
     height: 13px;
   }
-}
 
-.menu {
-  width: calc(4 * $column);
+  &__buttons-wrap {
+    font-size: 11px;
+    line-height: 13px;
+  }
 }

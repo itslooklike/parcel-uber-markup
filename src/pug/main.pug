@@ -1,21 +1,27 @@
 include card.pug
 
-main.main-content
-  .search-wrap
-    label.input
-      input.input__input(type='text' placeholder='Search for restaurant or cuisine')
-  .delivery-wrap
-    .delivery-time-slot
-      .form-slot
-        span.form-slot__label When
-        .form-slot__btn-wrap
-          button.button-secondary ASAP
-    .delivery-address-slot
-      .form-slot
-        span.form-slot__label To
-        label.form-input
-          input.form-input__input(type='text' value='ul. Bolshaya Dmitrovka,22')
-  .card-grid
-    +card('Макдоналдс — Газетный', '₽₽ • Бургеры', '25 - 35 Min')
-      img.card__img(src='assets/shop-mcdonalds.jpg', alt='Макдоналдс — Газетный')
+main.page-stores
+  .common__content
+    .page-stores__search-block
+      .page-stores__search-wrap
+        .search-wrap
+          label.input
+            input.input__input(type='text' placeholder='Search for restaurant or cuisine')
+      .page-stores__delivery-wrap
+        .page-stores__delivery-time
+          .form-slot
+            span.form-slot__label When
+            .form-slot__btn-wrap
+              button.button.button--secondary
+                span ASAP
+        .page-stores__delivery-address
+          .form-slot
+            span.form-slot__label To
+            label.form-input
+              input.form-input__input(type='text' value='ul. Bolshaya Dmitrovka,22')
+    .page-stores__title-wrap
+      .common__h1 Moscow Restaurants
+    .card-grid
+      +card('Макдоналдс — Газетный', '₽₽ • Бургеры', '25 - 35 Min')
+        img.card__img(src='assets/shop-mcdonalds.jpg', alt='Макдоналдс — Газетный')
 
