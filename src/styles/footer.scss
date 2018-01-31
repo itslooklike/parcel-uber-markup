@@ -30,6 +30,10 @@
     }
   }
 
+  &__select-wrap {
+    margin-bottom: 32px;
+  }
+
   &__hash-wrap {
     margin-bottom: 16px;
   }
@@ -71,6 +75,24 @@
     }
   }
 
+  &__menu-wrap {
+    margin-bottom: 40px;
+  }
+
+  &__menu-list {
+  }
+
+  &__menu-item {
+    margin-bottom: 24px;
+    color: var(--color-white);
+    font-size: 13px;
+    line-height: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &__stores-wrap {
     display: flex;
     justify-content: center;
@@ -95,24 +117,6 @@
     &--android {
       width: 124px;
       background-image: url('assets/badges/badge-android.png');
-    }
-  }
-
-  &__menu-wrap {
-    margin-bottom: 40px;
-  }
-
-  &__menu-list {
-  }
-
-  &__menu-item {
-    margin-bottom: 24px;
-    color: var(--color-white);
-    font-size: 13px;
-    line-height: 15px;
-
-    &:last-child {
-      margin-bottom: 0;
     }
   }
 
