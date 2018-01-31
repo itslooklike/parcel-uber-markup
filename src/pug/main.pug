@@ -4,21 +4,23 @@ main.page-stores
   .common__content
     .page-stores__search-block
       .page-stores__search-wrap
-        .search-wrap
-          label.input
-            input.input__input(type='text' placeholder='Search for restaurant or cuisine')
+        .form-search
+          label.form-search__label
+            input.form-search__input(type='text' placeholder='Search for restaurant or cuisine')
       .page-stores__delivery-wrap
         .page-stores__delivery-time
-          .form-slot
-            span.form-slot__label When
-            .form-slot__btn-wrap
+          .form-input-label
+            span.form-input-label__title When
+            .form-input-label__content
               button.button.button--secondary
                 span ASAP
         .page-stores__delivery-address
-          .form-slot
-            span.form-slot__label To
-            label.form-input
-              input.form-input__input(type='text' value='ul. Bolshaya Dmitrovka,22')
+          .form-input-label
+            span.form-input-label__title To
+            .form-input-label__content
+              .form-input-address
+                label.form-input-address__label
+                  input.form-input-address__input(type='text' value='ul. Bolshaya Dmitrovka,22')
     .page-stores__title-wrap
       .common__h1 Moscow Restaurants
     .card-grid

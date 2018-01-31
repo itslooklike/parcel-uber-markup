@@ -3,6 +3,10 @@
     margin: 0;
   }
 
+  &__img {
+    width: 100%;
+  }
+
   &__caption {
     margin-top: 16px;
     color: var(--color-font-black);
