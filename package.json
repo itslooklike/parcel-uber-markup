@@ -6,10 +6,10 @@
   "scripts": {
     "start": "parcel src/index.pug",
     "build": "parcel build src/index.pug --public-url ./",
-    "st": "static dist",
+    "static": "static dist",
     "c": "rm -rf node_modules",
-    "c:i": "rm -rf node_modules && npm i",
-    "c:start": "rm -rf node_modules && npm i && npm start",
+    "ci": "rm -rf node_modules && npm i",
+    "cis": "rm -rf node_modules && npm i && npm start",
     "lint": "stylelint ./src/**/*.scss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

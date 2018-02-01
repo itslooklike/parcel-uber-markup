@@ -2,7 +2,7 @@ include card.pug
 
 main.page-stores
   .common__content
-    .page-stores__search-block
+    section.page-stores__search-block
       .page-stores__search-wrap
         .form-search
           label.form-search__label
@@ -23,7 +23,7 @@ main.page-stores
                   input.form-input-address__input(type='text' value='ul. Bolshaya Dmitrovka,22')
     .page-stores__title-wrap
       h1.common__h1 Moscow Restaurants
-    .page-stores__grid
+    section.page-stores__grid
       .page-stores__grid-card
         +card('Макдоналдс — Газетный', '₽₽ • Бургеры', '25 - 35 Min')
           img.card__img(src='assets/restaurants/restaurant-mcdonalds.png', alt='Макдоналдс — Газетный')
