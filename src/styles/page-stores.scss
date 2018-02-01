@@ -37,6 +37,12 @@
   &__grid {
     margin-top: -8px;
     margin-bottom: -8px;
+
+    @include media-min-tablet {
+      display: grid;
+      grid-column-gap: 16px;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__grid-card {
