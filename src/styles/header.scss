@@ -15,7 +15,48 @@
   }
 
   &__buttons-wrap {
+    display: flex;
+    margin-right: -6px;
+    margin-left: -6px;
     font-size: 11px;
     line-height: 13px;
+  }
+
+  &__btn {
+    margin-right: 6px;
+    margin-left: 6px;
+
+    &--basket {
+      display: none;
+
+      @include media-min-tablet {
+        display: block;
+      }
+    }
+  }
+
+  &__basket {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url('assets/icon-basket.svg') 50% 50%/19px 23px no-repeat;
+  }
+
+  &__deliver-wrap {
+    display: none;
+    margin-right: auto;
+    margin-left: 21px;
+
+    @include media-min-tablet {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__delivery-prefix {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }

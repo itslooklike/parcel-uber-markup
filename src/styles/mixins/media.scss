@@ -1,0 +1,5 @@
+@mixin media-min-tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}

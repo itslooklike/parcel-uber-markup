@@ -3,8 +3,22 @@ mixin header
     .header__inner
       .header__logo-wrap
         img.header__logo(src="assets/logo-uber.svg", alt="Uber logo", width="106", height="13")
+      .header__deliver-wrap
+        .header__delivery-time
+          button.button.button--secondary
+            span ASAP
+        .header__delivery-prefix to
+        .header__delivery-address
+          .form-input-address
+            label.form-input-address__label
+              input.form-input-address__input(type='text' value='ul. Bolshaya Dmitrovka,22')
+
       .header__buttons-wrap
-        button.button.button--secondary(type="button")
-          span Sign In
-        button.button.button--primary(type="button")
-          span Register
+        .header__btn
+          button.button.button--secondary(type="button")
+            span Sign In
+        .header__btn
+          button.button.button--primary(type="button")
+            span Register
+        .header__btn.header__btn--basket
+          button.button.header__basket(type="button")
