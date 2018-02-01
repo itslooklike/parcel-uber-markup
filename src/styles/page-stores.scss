@@ -48,5 +48,11 @@
   &__grid-card {
     margin-top: 8px;
     margin-bottom: 8px;
+
+    @include media-max-tablet {
+      &:nth-child(n + 5) {
+        display: none;
+      }
+    }
   }
 }

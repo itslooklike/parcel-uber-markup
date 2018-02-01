@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin media-max-tablet {
+  @media (max-width: $tablet - 1) {
+    @content;
+  }
+}
