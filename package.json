@@ -7,9 +7,9 @@
     "start": "parcel src/index.pug",
     "build": "parcel build src/index.pug --public-url ./",
     "static": "static dist",
-    "c": "rm -rf node_modules",
-    "ci": "rm -rf node_modules && npm i",
-    "cis": "rm -rf node_modules && npm i && npm start",
+    "c": "rm -rf node_modules .cache",
+    "ci": "npm run c && npm i",
+    "cis": "npm run ci && npm start",
     "lint": "stylelint ./src/**/*.scss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^7.2.5",
     "node-sass": "^4.7.2",
     "node-static": "^0.7.10",
     "parcel-bundler": "^1.5.1",
