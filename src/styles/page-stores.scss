@@ -43,25 +43,24 @@
     margin-left: 8px;
   }
 
-  &__grid {
-    margin-top: -8px;
-    margin-bottom: -8px;
-
+  &__grid-wrap {
     @include media-min-tablet {
-      display: grid;
-      grid-column-gap: 16px;
-      grid-template-columns: 1fr 1fr;
+      margin-bottom: 48px;
     }
   }
 
-  &__grid-card {
-    margin-top: 8px;
-    margin-bottom: 8px;
+  &__grid {
+    display: grid;
+    justify-content: space-between;
+    grid-column-gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 
-    @include media-max-tablet {
-      &:nth-child(n + 5) {
-        display: none;
-      }
-    }
+  &__grid-card {
+    // @include media-max-tablet {
+    //   &:nth-child(n + 5) {
+    //     display: none;
+    //   }
+    // }
   }
 }

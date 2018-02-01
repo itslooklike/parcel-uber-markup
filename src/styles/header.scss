@@ -6,7 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    max-width: var(--max-content-width);
     padding: 16px 8px 8px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &__logo {

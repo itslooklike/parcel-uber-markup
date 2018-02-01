@@ -1,6 +1,9 @@
 .common {
   &__content {
+    max-width: var(--max-content-width);
     padding: 40px 8px 10px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &__hr {
