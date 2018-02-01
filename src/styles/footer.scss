@@ -3,6 +3,10 @@
 
   &__inner {
     padding: 56px 8px;
+
+    @include media-min-tablet {
+      padding-bottom: 40px;
+    }
   }
 
   &__logo-wrap {
@@ -23,10 +27,32 @@
 
     &--menu {
       margin-bottom: 24px;
+
+      @include media-min-tablet {
+        margin-bottom: 40px;
+      }
     }
 
     &--badges {
       margin-bottom: 40px;
+    }
+  }
+
+  &__main-content {
+    margin-bottom: 40px;
+
+    @include media-min-tablet {
+      display: grid;
+      margin-bottom: 48px;
+      grid-template-columns: 1fr 1.5fr;
+    }
+  }
+
+  &__aside {
+    margin-bottom: 40px;
+
+    @include media-min-tablet {
+      margin-bottom: 0;
     }
   }
 
@@ -52,7 +78,6 @@
     display: flex;
     justify-content: flex-start;
     margin-right: -6px;
-    margin-bottom: 40px;
     margin-left: -6px;
   }
 
@@ -76,10 +101,14 @@
   }
 
   &__menu-wrap {
-    margin-bottom: 40px;
   }
 
+  // to-do: найти как заполнять по столбцам а не по строкам
   &__menu-list {
+    @include media-min-tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__menu-item {
@@ -97,6 +126,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
+
+    @include media-min-tablet {
+      margin-bottom: 40px;
+    }
   }
 
   &__stores-item-wrap {
@@ -121,6 +154,11 @@
   }
 
   &__copyright-list {
+    @include media-min-tablet {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 112px;
+    }
   }
 
   &__copyright-item {
@@ -128,6 +166,10 @@
     color: var(--color-white);
     font-size: 11px;
     line-height: 12px;
+
+    @include media-min-tablet {
+      margin-bottom: 0;
+    }
 
     &:last-child {
       margin-bottom: 0;
