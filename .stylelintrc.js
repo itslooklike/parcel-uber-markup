@@ -1,3 +1,7 @@
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-idiomatic-css'],
+  extends: [
+    'stylelint-config-standard',
+    'stylelint-config-recommended-scss',
+    'stylelint-config-idiomatic-css',
+  ],
 };
