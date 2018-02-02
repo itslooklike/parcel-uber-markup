@@ -6,6 +6,12 @@
     align-items: flex-end;
     height: 255px;
     background: url('assets/restaurant/restaurant-pushkin.jpg') 50%/cover no-repeat;
+
+    @include media-min-tablet {
+      justify-content: flex-start;
+      align-items: center;
+      height: 364px;
+    }
   }
 
   &__card {
@@ -20,24 +26,44 @@
     background-color: var(--color-white);
     border-radius: 2px;
     box-shadow: 0 0 16px rgba(117, 117, 117, 0.2);
+
+    @include media-min-tablet {
+      bottom: initial;
+      width: initial;
+      padding: 38px 48px;
+    }
   }
 
   &__card-title {
     margin: 0 0 40px;
     color: var(--color-font-black);
     font-size: 24px;
+
+    @include media-min-tablet {
+      font-size: 36px;
+    }
   }
 
   &__card-text-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include media-min-tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__card-subtitle {
     margin: 0 0 16px;
     color: var(--color-gray);
     font-size: 14px;
+
+    @include media-min-tablet {
+      margin: 0 auto 0 0;
+    }
   }
 
   &__card-deliver-time {
@@ -50,12 +76,21 @@
 
   &__inner {
     padding: 110px 8px 40px;
+
+    @include media-min-tablet {
+      padding-bottom: 48px;
+    }
   }
 
   &__title-wrap {
     display: flex;
     justify-content: center;
     margin-bottom: 56px;
+
+    @include media-min-tablet {
+      justify-content: flex-start;
+      margin-bottom: 32px;
+    }
   }
 
   &__title {
@@ -76,6 +111,10 @@
       height: 1px;
       background-color: var(--color-gray-dark);
       transform: translateX(-50%);
+
+      @include media-min-tablet {
+        display: none;
+      }
     }
   }
 
@@ -84,6 +123,10 @@
 
   &__grid-card-wrap {
     margin-bottom: 16px;
+
+    @include media-min-tablet {
+      margin-bottom: 32px;
+    }
 
     &:last-child {
       margin-bottom: 0;
