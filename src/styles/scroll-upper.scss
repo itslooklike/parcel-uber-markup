@@ -7,9 +7,16 @@
   width: 64px;
   height: 64px;
   border: 0;
-  background: var(--color-green-light) url('assets/icons/icon-arrow.svg') 50% 50%/16px 25px no-repeat;
+  background: var(--color-green-light) url('assets/icons/icon-arrow.svg') 50% 50%/16px 25px
+    no-repeat;
+  transition: opacity 0.3s;
 
-  &.active {
+  &.enter {
     display: block;
+    opacity: 0;
+  }
+
+  &.enter-active {
+    opacity: 1;
   }
 }

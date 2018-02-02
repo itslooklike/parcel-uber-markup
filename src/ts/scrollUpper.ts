@@ -1,16 +1,23 @@
+import raf from './raf';
+
 const scrollUpper = () => {
   const btn = document.querySelector('.scroll-upper');
-  // заменить на обсервер
-  const PIXELS_FROM_TOP = 100;
+  const header = document.querySelector('.header');
 
-  // накатить дебаунс
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > PIXELS_FROM_TOP) {
-      btn.classList.add('active');
+  const intObsOptions = {
+    rootMargin: '20% 0px 0px',
+  };
+
+  const io = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      btn.classList.remove('enter', 'enter-active');
     } else {
-      btn.classList.remove('active');
+      btn.classList.add('enter');
+      raf(() => btn.classList.add('enter-active'));
     }
-  });
+  }, intObsOptions);
+
+  io.observe(header);
 
   btn.addEventListener('click', () => {
     window.scroll({
