@@ -4,8 +4,20 @@
   }
 }
 
+@mixin media-min-desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
 @mixin media-max-tablet {
   @media (max-width: $tablet - 1) {
+    @content;
+  }
+}
+
+@mixin media-max-desktop {
+  @media (max-width: $desktop - 1) {
     @content;
   }
 }

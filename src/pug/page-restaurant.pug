@@ -4,20 +4,21 @@ include restaurant-card.pug
 block content
   main.page-restaurant
     section.page-restaurant__bg
-      .page-restaurant__card
-        h1.page-restaurant__card-title Трактир «Пушкин»
-        .page-restaurant__card-text-wrap
-          p.page-restaurant__card-subtitle ₽₽₽ • Европейская
-          .page-restaurant__card-deliver-time 40 - 50 Min
+      .page-restaurant__bg-inner.common-content
+        .page-restaurant__card
+          h1.page-restaurant__card-title Трактир «Пушкин»
+          .page-restaurant__card-text-wrap
+            p.page-restaurant__card-subtitle ₽₽₽ • Европейская
+            .page-restaurant__card-deliver-time 40 - 50 Min
     nav.page-restaurant__menu
-        ul.page-restaurant__menu-inner
+        ul.page-restaurant__menu-inner.common-content
           li.page-restaurant__menu-item.page-restaurant__menu-item--active Закуски
           li.page-restaurant__menu-item Салаты
           li.page-restaurant__menu-item Супы
           li.page-restaurant__menu-item Горячие блюда
           li.page-restaurant__menu-item Гарниры
           li.page-restaurant__menu-item Десерты
-    section.page-restaurant__inner
+    section.page-restaurant__inner.common-content
       .page-restaurant__title-wrap
         h2.page-restaurant__title Закуски
       .page-restaurant__grid

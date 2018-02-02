@@ -5,6 +5,7 @@
   "main": "src/index.html",
   "scripts": {
     "start": "parcel src/pug/page-restaurant.pug",
+    "start1": "parcel src/pug/page-stores.pug",
     "build": "parcel build src/index.pug --public-url ./",
     "static": "static dist",
     "c": "rm -rf node_modules .cache",
