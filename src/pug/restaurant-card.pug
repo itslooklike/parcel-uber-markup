@@ -1,0 +1,10 @@
+mixin restaurant-card(title, subtitle, price)
+  .restaurant-card
+    .restaurant-card__content
+      h3.restaurant-card__title= title
+      if subtitle
+        p.restaurant-card__subtitle= subtitle
+      .restaurant-card__price= price
+    .restaurant-card__img-wrap
+      block
+

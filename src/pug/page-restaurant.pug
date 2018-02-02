@@ -1,0 +1,38 @@
+extends layout-main.pug
+include restaurant-card.pug
+
+block content
+  main.page-restaurant
+    section.page-restaurant__bg
+      .page-restaurant__card
+        h1.page-restaurant__card-title Трактир «Пушкин»
+        .page-restaurant__card-text-wrap
+          p.page-restaurant__card-subtitle ₽₽₽ • Европейская
+          .page-restaurant__card-deliver-time 40 - 50 Min
+    section.page-restaurant__inner
+      .page-restaurant__title-wrap
+        h2.page-restaurant__title Закуски
+      .page-restaurant__grid
+        .page-restaurant__grid-card-wrap
+          +restaurant-card('Сельдь на бородинском…', 'С яйцом и огурцом', '240 ₽')
+            img.restaurant-card__img(src="../assets/restaurant/seld.jpg", alt="Сельдь на бородинском…")
+
+        .page-restaurant__grid-card-wrap
+          +restaurant-card('Соленья ассорти', null, '320 ₽')
+            img.restaurant-card__img(src="../assets/restaurant/assort.jpg", alt="Соленья ассорти")
+
+        .page-restaurant__grid-card-wrap
+          +restaurant-card('Грибы маринованные', null, '300 ₽')
+            img.restaurant-card__img(src="../assets/restaurant/mushrooms.jpg", alt="Грибы маринованные")
+
+        .page-restaurant__grid-card-wrap
+          +restaurant-card('Сало домашнее с горчицей', null, '320 ₽')
+            img.restaurant-card__img(src="../assets/restaurant/salo.jpg", alt="Сало домашнее с горчицей")
+
+        .page-restaurant__grid-card-wrap
+          +restaurant-card('Малосольная семга', null, '390 ₽')
+            img.restaurant-card__img(src="../assets/restaurant/semga.jpg", alt="Малосольная семга")
+
+        .page-restaurant__grid-card-wrap
+          +restaurant-card('Язык говяжий с хреном', null, '350 ₽')
+            img.restaurant-card__img(src="../assets/restaurant/tongue.jpg", alt="Язык говяжий с хреном")

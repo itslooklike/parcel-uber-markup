@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.html",
   "scripts": {
-    "start": "parcel src/index.pug",
+    "start": "parcel src/pug/page-restaurant.pug",
     "build": "parcel build src/index.pug --public-url ./",
     "static": "static dist",
     "c": "rm -rf node_modules .cache",

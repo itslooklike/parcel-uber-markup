@@ -1,0 +1,92 @@
+.page-restaurant {
+  &__bg {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    height: 255px;
+    background: url('assets/restaurant/restaurant-pushkin.jpg') 50%/cover no-repeat;
+  }
+
+  &__card {
+    position: relative;
+    z-index: 1;
+    bottom: -60px;
+    width: 100%;
+    padding: 24px;
+    margin-right: 8px;
+    margin-left: 8px;
+    text-align: center;
+    background-color: var(--color-white);
+    border-radius: 2px;
+    box-shadow: 0 0 16px rgba(117, 117, 117, 0.2);
+  }
+
+  &__card-title {
+    margin: 0 0 40px;
+    color: var(--color-font-black);
+    font-size: 24px;
+  }
+
+  &__card-text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__card-subtitle {
+    margin: 0 0 16px;
+    color: var(--color-gray);
+    font-size: 14px;
+  }
+
+  &__card-deliver-time {
+    padding: 9px 16px 8px;
+    color: var(--color-white);
+    font-size: 13px;
+    background-color: var(--color-black);
+    border-radius: 16px;
+  }
+
+  &__inner {
+    padding: 110px 8px 40px;
+  }
+
+  &__title-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    color: var(--color-font-black);
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      width: 70%;
+      height: 1px;
+      background-color: var(--color-gray-dark);
+      transform: translateX(-50%);
+    }
+  }
+
+  &__grid {
+  }
+
+  &__grid-card-wrap {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
