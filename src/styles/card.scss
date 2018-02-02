@@ -1,12 +1,50 @@
 .card {
+  // размеры картинок, для вычисления пропорций
+  --mobile-img-width: 308;
+  --mobile-img-height: 246;
+  --tablet-img-width: 376;
+  --tablet-img-height: 256;
+  --desktop-img-width: 308;
+  --desktop-img-height: 256;
+  --ratio-mobile: calc(var(--mobile-img-height) / var(--mobile-img-width) * 100%);
+  --ratio-tablet: calc(var(--tablet-img-height) / var(--tablet-img-width) * 100%);
+  --ratio-desktop: calc(var(--desktop-img-height) / var(--desktop-img-width) * 100%);
+
   padding-bottom: 20px;
 
   &__figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin: 0;
   }
 
+  &__img-wrap {
+    position: relative;
+
+    // блок для сохранения пропорций картинок
+    &::after {
+      content: '';
+      display: block;
+      padding-bottom: var(--ratio-mobile);
+
+      @include media-min-tablet {
+        padding-bottom: var(--ratio-tablet);
+      }
+
+      @include media-min-desktop {
+        padding-bottom: var(--ratio-desktop);
+      }
+    }
+  }
+
   &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__caption {

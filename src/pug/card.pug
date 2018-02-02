@@ -1,7 +1,8 @@
 mixin card(title, subtitle, time, url)
   .card
     figure.card__figure
-      block
+      .card__img-wrap
+        block
       figcaption.card__caption= title
     p.card__notice= subtitle
     span.card__deliver-time= time
