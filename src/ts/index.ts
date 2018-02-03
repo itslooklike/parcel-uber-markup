@@ -1,7 +1,7 @@
 import 'intersection-observer';
 import 'normalize.css';
-import './index.scss';
-import scrollUpper from './ts/scrollUpper';
+import '../scss/index.scss';
+import scrollUpper from './scrollUpper';
 
 const domIsLoaded = () => {
   scrollUpper();

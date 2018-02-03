@@ -91,15 +91,15 @@
     margin-left: 6px;
 
     &--facebook {
-      background-image: url('assets/social-icons/social-icons-facebook.svg');
+      background-image: url('../assets/social-icons/social-icons-facebook.svg');
     }
 
     &--instagram {
-      background-image: url('assets/social-icons/social-icons-instagram.svg');
+      background-image: url('../assets/social-icons/social-icons-instagram.svg');
     }
 
     &--twitter {
-      background-image: url('assets/social-icons/social-icons-twitter.svg');
+      background-image: url('../assets/social-icons/social-icons-twitter.svg');
     }
   }
 
@@ -147,12 +147,12 @@
 
     &--apple {
       width: 109px;
-      background-image: url('assets/badges/badge-appstore.png');
+      background-image: url('../assets/badges/badge-appstore.png');
     }
 
     &--android {
       width: 124px;
-      background-image: url('assets/badges/badge-android.png');
+      background-image: url('../assets/badges/badge-android.png');
     }
   }
 
