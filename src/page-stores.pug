@@ -1,10 +1,29 @@
 extends pug/layout-main.pug
 include pug/card.pug
 
+block meta
+  title Uber Eats - большой выбор ресторанов и кафе
+  meta(
+    name="description"
+    content="Огромный выбор ресторанов на любой вкус. Корейская, Японская и множество других"
+    )
+  meta(name="keywords" content="ресторан, суши, пицца, пятница, ужин")
+
+  meta(property='og:type', content='website')
+  meta(property='og:locale', content='ru_RU')
+  meta(property='og:title', content='Огромный выбор ресторанов')
+  meta(property='og:description', content='Выбери себе еду с доставкой на дом, из огромного выбора ресторанов')
+  meta(property='og:url', content='http://localhost:1234/')
+  meta(property='og:image', content='http://localhost:1234/frontend-cover-new-year-fb.png')
+  meta(property='vk:image', content='http://localhost:1234//frontend-cover-new-year-vk.png')
+  meta(name='twitter:card', content='localhost')
+  meta(name='twitter:site', content='@localhost')
+  meta(name='twitter:creator', content='@localhost')
+
 block content
   main.page-stores
-    .common-content.page-stores__content
-      section.page-stores__search-block
+    section.common-content.page-stores__content
+      .page-stores__search-block
         .page-stores__search-wrap
           .form-search
             label.form-search__label
@@ -25,7 +44,7 @@ block content
                     input.form-input-address__input(type='text' value='ul. Bolshaya Dmitrovka,22')
       .page-stores__title-wrap
         h1.common-h1 Moscow Restaurants
-      section.page-stores__grid-wrap
+      .page-stores__grid-wrap
         .page-stores__grid
           a.page-stores__grid-card(href="page-restaurant.pug")
             +card('Макдоналдс — Газетный', '₽₽ • Бургеры', '25 - 35 Min')

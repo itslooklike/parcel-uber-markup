@@ -67,4 +67,16 @@
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
+
+  &__grid-card {
+    text-decoration: unset;
+    transition-duration: 0.3s;
+    transition-property: transform, box-shadow;
+
+    @include media-min-desktop {
+      &:hover {
+        transform: translateY(-1px);
+      }
+    }
+  }
 }

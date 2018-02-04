@@ -1,6 +1,25 @@
 extends pug/layout-main.pug
 include pug/restaurant-card.pug
 
+block meta
+  title Uber Eats - Трактир «Пушкин»
+  meta(
+    name="description"
+    content="Ресторан Трактир «Пушкин», вкуснейшие блюда какой-то там кухни"
+    )
+  meta(name="keywords" content="ресторан, пушкин, пицца, пятница, ужин")
+
+  meta(property='og:type', content='website')
+  meta(property='og:locale', content='ru_RU')
+  meta(property='og:title', content='Трактир «Пушкин»')
+  meta(property='og:description', content='Выбери себе еду с доставкой на дом, Трактир «Пушкин»')
+  meta(property='og:url', content='http://localhost:1234/')
+  meta(property='og:image', content='http://localhost:1234/frontend-cover-new-year-fb.png')
+  meta(property='vk:image', content='http://localhost:1234//frontend-cover-new-year-vk.png')
+  meta(name='twitter:card', content='localhost')
+  meta(name='twitter:site', content='@localhost')
+  meta(name='twitter:creator', content='@localhost')
+
 block content
   main.page-restaurant
     section.page-restaurant__bg
@@ -23,8 +42,8 @@ block content
         h2.page-restaurant__title Закуски
       .page-restaurant__grid
         .page-restaurant__grid-card-wrap
-          +restaurant-card('Сельдь на бородинском…', 'С яйцом и огурцом', '240 ₽')
-            img.restaurant-card__img(src="./assets/restaurant/seld.jpg", alt="Сельдь на бородинском…")
+          +restaurant-card('Сельдь на бородинском хлебе', 'С яйцом и огурцом', '240 ₽')
+            img.restaurant-card__img(src="./assets/restaurant/seld.jpg", alt="Сельдь на бородинском хлебе")
 
         .page-restaurant__grid-card-wrap
           +restaurant-card('Соленья ассорти', null, '320 ₽')
