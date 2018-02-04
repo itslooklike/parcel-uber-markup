@@ -5,8 +5,9 @@ mixin header
         img.header__logo(src="./assets/logos/logo-uber.svg", alt="Uber logo", width="106", height="13")
       .header__deliver-wrap
         .header__delivery-time
-          button.button.button--secondary
-            span ASAP
+          label.checkbox
+            input.checkbox__input(type="checkbox")
+            span.checkbox__text.button.button--checkbox.button--secondary ASAP
         .header__delivery-prefix to
         .header__delivery-address
           .form-input-address
