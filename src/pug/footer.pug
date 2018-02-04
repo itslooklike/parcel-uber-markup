@@ -2,7 +2,8 @@ mixin footer
   .footer
     .footer__inner
       .footer__logo-wrap
-        img.footer__logo-img(src="./assets/logos/logo-uber-large.svg", alt="Логотип UberEats", width="192" height="20")
+        a&attributes({'href': '/'})
+          img.footer__logo-img(src="./assets/logos/logo-uber-large.svg", alt="Логотип UberEats", width="192" height="20")
 
       .footer__hr-wrap.footer__hr-wrap--logo
         hr.common-hr
@@ -21,28 +22,35 @@ mixin footer
               span.footer__hash-hash #
               |  UberEats
           .footer__social-wrap
-            .footer__social.footer__social--facebook
-            .footer__social.footer__social--instagram
-            .footer__social.footer__social--twitter
+            a(href="#").footer__social.footer__social--facebook
+            a(href="#").footer__social.footer__social--instagram
+            a(href="#").footer__social.footer__social--twitter
 
         nav.footer__menu-wrap
           ul.footer__menu-list
-            li.footer__menu-item About UberEats
-            li.footer__menu-item Become a&nbsp;Delivery Partner
-            li.footer__menu-item Become a&nbsp;Restaurant Partner
-            li.footer__menu-item See all&nbsp;cities
-            li.footer__menu-item Pricing
-            li.footer__menu-item Help
-            li.footer__menu-item FAQs
+            li.footer__menu-item
+              a(href="#").footer__menu-link About UberEats
+            li.footer__menu-item
+              a(href="#").footer__menu-link Become a&nbsp;Delivery Partner
+            li.footer__menu-item
+              a(href="#").footer__menu-link Become a&nbsp;Restaurant Partner
+            li.footer__menu-item
+              a(href="#").footer__menu-link See all&nbsp;cities
+            li.footer__menu-item
+              a(href="#").footer__menu-link Pricing
+            li.footer__menu-item
+              a(href="#").footer__menu-link Help
+            li.footer__menu-item
+              a(href="#").footer__menu-link FAQs
 
       .footer__hr-wrap.footer__hr-wrap--menu
         hr.common-hr
 
       .footer__stores-wrap
         .footer__stores-item-wrap
-          .footer__stores.footer__stores--apple
+          a(href="#").footer__stores.footer__stores--apple
         .footer__stores-item-wrap
-          .footer__stores.footer__stores--android
+          a(href="#").footer__stores.footer__stores--android
 
       .footer__hr-wrap.footer__hr-wrap--badges
         hr.common-hr

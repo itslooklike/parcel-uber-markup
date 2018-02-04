@@ -89,6 +89,12 @@
     height: 24px;
     margin-right: 6px;
     margin-left: 6px;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+
+    &:hover {
+      opacity: 0.7;
+    }
 
     &--facebook {
       background-image: url('../assets/social-icons/social-icons-facebook.svg');
@@ -116,12 +122,22 @@
 
   &__menu-item {
     margin-bottom: 24px;
-    color: var(--color-white);
-    font-size: 13px;
-    line-height: 15px;
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  &__menu-link {
+    color: var(--color-white);
+    font-size: 13px;
+    line-height: 15px;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    transition-property: opacity, color;
+
+    &:hover {
+      color: var(--color-gray);
     }
   }
 
@@ -141,9 +157,16 @@
   }
 
   &__stores {
+    display: block;
     height: 36px;
     background-repeat: no-repeat;
     background-size: cover;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+
+    &:hover {
+      opacity: 0.8;
+    }
 
     &--apple {
       width: 109px;
