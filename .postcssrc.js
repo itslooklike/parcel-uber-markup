@@ -4,7 +4,8 @@ module.exports = {
     'postcss-font-family-system-ui': true,
     'postcss-custom-media': true,
     autoprefixer: {
-      grid: true,
+      cascade: false,
+      flexbox: 'no-2009',
     },
   },
 };

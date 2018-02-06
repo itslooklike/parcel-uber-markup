@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/index.pug",
-  "browserslist": [
-    "last 2 versions"
-  ],
+  "browserslist": [">1% in RU", "ios 8"],
   "scripts": {
     "start": "parcel src/index.pug --no-cache",
     "prebuild": "rm -rf dist .cache",
