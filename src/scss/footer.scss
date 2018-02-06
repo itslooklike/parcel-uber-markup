@@ -7,7 +7,7 @@
     margin-right: auto;
     margin-left: auto;
 
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       padding-bottom: 40px;
     }
   }
@@ -31,7 +31,7 @@
     &--menu {
       margin-bottom: 24px;
 
-      @include media-min-tablet {
+      @media (--media-min-tablet) {
         margin-bottom: 40px;
       }
     }
@@ -44,7 +44,7 @@
   &__main-content {
     margin-bottom: 40px;
 
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       display: grid;
       margin-bottom: 48px;
       grid-template-columns: 1fr 2fr;
@@ -54,7 +54,7 @@
   &__aside {
     margin-bottom: 40px;
 
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       margin-bottom: 0;
     }
   }
@@ -114,7 +114,7 @@
 
   // to-do: найти как заполнять по столбцам а не по строкам
   &__menu-list {
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
@@ -146,7 +146,7 @@
     justify-content: center;
     margin-bottom: 24px;
 
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       margin-bottom: 40px;
     }
   }
@@ -188,7 +188,7 @@
   }
 
   &__copyright-list {
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       display: flex;
       justify-content: space-between;
       padding-right: 112px;
@@ -201,7 +201,7 @@
     font-size: 11px;
     line-height: 12px;
 
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       margin-bottom: 0;
     }
 

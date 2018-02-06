@@ -5,7 +5,7 @@
     height: 40px;
     border-bottom: 1px solid rgba(117, 117, 177, 0.3);
 
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       height: 56px;
     }
 
@@ -21,7 +21,7 @@
       pointer-events: none;
       transform: translateY(-50%);
 
-      @include media-min-tablet {
+      @media (--media-min-tablet) {
         width: 22px;
         height: 22px;
       }
@@ -35,7 +35,7 @@
     padding: 0 16px 0 24px;
     border: none;
 
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       padding-left: 34px;
     }
 

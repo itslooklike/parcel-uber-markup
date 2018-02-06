@@ -13,4 +13,9 @@ $desktop: 1124px;
   --color-font-black: #1d1d1d; // var(--color-font-black)
   --color-border-gray: #e0e0e0; // var(--color-border-gray)
   --max-content-width: 956px; // var(--max-content-width)
+
+  @custom-media --media-min-tablet (min-width: 768px);
+  @custom-media --media-min-desktop (min-width: 1124px);
+  @custom-media --media-max-tablet (max-width: calc(768px - 1px));
+  @custom-media --media-max-desktop (max-width: calc(1124px - 1px));
 }

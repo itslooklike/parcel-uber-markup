@@ -28,11 +28,11 @@
       display: block;
       padding-bottom: var(--ratio-mobile);
 
-      @include media-min-tablet {
+      @media (--media-min-tablet) {
         padding-bottom: var(--ratio-tablet);
       }
 
-      @include media-min-desktop {
+      @media (--media-min-desktop) {
         padding-bottom: var(--ratio-desktop);
       }
     }

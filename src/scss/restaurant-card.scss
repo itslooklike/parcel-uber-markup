@@ -3,7 +3,7 @@
   justify-content: space-between;
   border-bottom: 1px solid rgba(#757575, 0.2);
 
-  @include media-min-tablet {
+  @media (--media-min-tablet) {
     border: 1px solid rgba(#757575, 0.2);
   }
 
@@ -16,7 +16,7 @@
     padding-bottom: 16px;
     text-align: left;
 
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       padding: 16px 24px;
     }
   }
@@ -30,7 +30,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       font-size: 16px;
     }
   }
@@ -55,7 +55,7 @@
     width: 102px;
     height: 102px;
 
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       width: 200px;
       height: 160px;
     }

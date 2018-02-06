@@ -38,7 +38,7 @@
     &--basket {
       display: none;
 
-      @include media-min-tablet {
+      @media (--media-min-tablet) {
         display: block;
       }
     }
@@ -58,7 +58,7 @@
     margin-right: auto;
     margin-left: 21px;
 
-    @include media-min-tablet {
+    @media (--media-min-tablet) {
       display: flex;
       align-items: center;
     }
