@@ -170,12 +170,20 @@
 
     &--apple {
       width: 109px;
-      background-image: url('../assets/badges/badge-appstore.png');
+      background-image:
+        image-set(
+          url('../assets/badges/badge-appstore.png') 1x,
+          url('../assets/badges/badge-appstore@2x.png') 2x,
+          url('../assets/badges/badge-appstore@3x.png') 3x);
     }
 
     &--android {
       width: 124px;
-      background-image: url('../assets/badges/badge-android.png');
+      background-image:
+        image-set(
+          url('../assets/badges/badge-android.png') 1x,
+          url('../assets/badges/badge-android@2x.png') 2x,
+          url('../assets/badges/badge-android@3x.png') 3x);
     }
   }
 

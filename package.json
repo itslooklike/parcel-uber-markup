@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/index.pug",
-  "browserslist": ["last 2 versions"],
+  "browserslist": [
+    "last 2 versions"
+  ],
   "scripts": {
     "start": "parcel src/index.pug --no-cache",
     "prebuild": "rm -rf dist .cache",
@@ -26,6 +28,7 @@
     "normalize.css": "^7.0.0",
     "parcel-bundler": "^1.5.1",
     "parcel-plugin-pug": "^0.2.4",
+    "postcss-image-set-polyfill": "^0.4.4",
     "prettier": "^1.10.2",
     "stylelint": "^8.4.0",
     "stylelint-config-idiomatic-css": "^1.0.2",
