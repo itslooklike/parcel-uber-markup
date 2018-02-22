@@ -1,7 +1,12 @@
 .page-restaurant {
   &__bg {
     height: 255px;
-    background: url('../assets/restaurant/restaurant-pushkin.jpg') 50%/cover no-repeat;
+    background: image-set(
+      url("../assets/restaurant/restaurant-pushkin.jpg") 1x,
+      url("../assets/restaurant/restaurant-pushkin@2x.jpg") 2x,
+      url("../assets/restaurant/restaurant-pushkin@3x.jpg") 3x
+    )
+      50%/cover no-repeat;
 
     @media (--media-min-tablet) {
       height: 364px;
@@ -152,7 +157,7 @@
     text-align: center;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -12px;
       left: 50%;
