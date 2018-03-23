@@ -6,19 +6,19 @@
   border-radius: 2px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 2;
     top: 12px;
     left: 16px;
     width: 7px;
     height: 14px;
-    background: url('../assets/icons/icon-world.svg') 0 0/cover no-repeat;
+    background: url("../assets/icons/icon-world.svg") 0 0 / cover no-repeat;
     pointer-events: none;
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 2;
     top: 12px;
@@ -40,12 +40,12 @@
     height: 100%;
     padding-left: 48px;
     border: 0;
+    background-color: var(--color-dark);
     color: var(--color-white);
     font-size: 13px;
     line-height: 15px;
     text-align: left;
     text-transform: uppercase;
     appearance: none;
-    background-color: var(--color-dark);
   }
 }
