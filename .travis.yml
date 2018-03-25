@@ -1,13 +1,16 @@
 language: node_js
-
 node_js:
   - "9.8"
-
 script:
   - npm run test
   - npm run build
   - npm run n:rename
-  - npm run deploy
-
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: dist
+  on:
+    branch: master
 notifications:
   email: false
