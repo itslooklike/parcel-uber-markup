@@ -3,6 +3,9 @@ language: node_js
 node_js:
   - "9.8"
 
+notifications:
+  email: false
+
 branches:
   only:
   - master
@@ -24,6 +27,3 @@ deploy:
     script: npm run deploy
     on:
       branch: master
-
-notifications:
-  email: false
