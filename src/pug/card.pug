@@ -1,8 +1,8 @@
-mixin card(title, subtitle, time, url)
+mixin card(title, subtitle, time, url, set)
   .card
     figure.card__figure
       .card__img-wrap
-        block
+        img.card__img(src=url, srcset=set, alt=title)
       figcaption.card__caption= title
     p.card__notice= subtitle
     span.card__deliver-time= time

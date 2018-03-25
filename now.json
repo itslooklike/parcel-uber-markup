@@ -1,0 +1,6 @@
+{
+  "name": "uber-parcel",
+  "alias": "uber-parcel.now.sh",
+  "type": "static",
+  "public": true
+}

@@ -55,9 +55,9 @@
 
   &__grid {
     display: grid;
+    grid-template-columns: 1fr;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    grid-template-columns: 1fr;
 
     @media (--media-min-tablet) {
       grid-template-columns: 1fr 1fr;
