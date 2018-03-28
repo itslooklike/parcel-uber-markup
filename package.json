@@ -27,9 +27,9 @@
     "node-sass": "^4.8.3",
     "node-static": "^0.7.10",
     "normalize.css": "^8.0.0",
-    "now": "^10.2.1",
+    "now": "^10.2.2",
     "parcel-bundler": "^1.6.2",
-    "parcel-plugin-pug": "^0.3.0",
+    "parcel-plugin-pug": "^0.3.1",
     "postcss-custom-media": "^6.0.0",
     "postcss-font-family-system-ui": "^3.0.0",
     "postcss-image-set-polyfill": "^0.4.4",
@@ -39,7 +39,6 @@
     "stylelint-config-recommended-scss": "^3.1.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-scss": "^2.5.0",
-    "tslib": "^1.9.0",
-    "typescript": "^2.7.2"
+    "typescript": "^2.8.1"
   }
 }
