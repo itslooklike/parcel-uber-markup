@@ -13,10 +13,7 @@
 .vscode
 *.sublime-*
 .sass-cache
-
-prepros.cfg
-prepros-6.config
-config.codekit3
+.parcel-cache
 
 # misc
 .DS_Store
