@@ -13,11 +13,7 @@
     "build": "npm run b:clear && npm run b:build",
     "static": "static dist",
     "lint": "stylelint ./src/**/*.scss",
-    "test": "npm run lint",
-    "n:send": "now './dist' -A ../now.json -t $NOW_TOKEN",
-    "n:alias": "now alias -t $NOW_TOKEN",
-    "n:remove": "now rm 'uber-parcel' -s -y -t $NOW_TOKEN",
-    "deploy": "npm run n:send && npm run n:alias && npm run n:remove"
+    "test": "npm run lint"
   },
   "keywords": [],
   "author": "",
